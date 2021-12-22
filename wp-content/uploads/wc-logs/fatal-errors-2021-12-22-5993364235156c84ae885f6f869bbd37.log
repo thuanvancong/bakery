@@ -1,0 +1,22 @@
+2021-12-22T06:40:46+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\bakery\wp-content\themes\restaurent\functions.php on line 155
+
+2021-12-22T06:41:47+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\bakery\wp-content\themes\restaurent\functions.php on line 155
+
+2021-12-22T06:43:48+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs/wp-config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\bakery\wp-content\themes\restaurent\functions.php on line 155
+
+2021-12-22T06:44:21+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs/inc/handler_woocommerce.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\bakery\wp-content\themes\restaurent\functions.php on line 155
+
+2021-12-22T06:44:45+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs/inc/handler_woocommerce.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\bakery\wp-content\themes\restaurent\functions.php on line 157
+
+2021-12-22T06:45:14+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs/inc/handler_woocommerce.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\bakery\wp-content\themes\restaurent\functions.php on line 155
+
+2021-12-22T06:45:37+00:00 CRITICAL require_once(): Failed opening required '/../inc/handler_woocommerce.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\bakery\wp-content\themes\restaurent\functions.php on line 155
+
+2021-12-22T06:55:34+00:00 CRITICAL Uncaught Error: Call to undefined function twenty_twenty_one_get_icon_svg() in C:\xampp\htdocs\bakery\wp-content\themes\restaurent\single.php:36
+Stack trace:
+#0 C:\xampp\htdocs\bakery\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\bakery\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bakery\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\bakery\wp-content\themes\restaurent\single.php on line 36
+

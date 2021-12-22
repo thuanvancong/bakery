@@ -12,6 +12,9 @@
  */
 
 ?>
+<?php
+$item_menu = get_menus( 'main-menu' );
+?>
 <!doctype html>
 <html <?php language_attributes(); ?> <?php restaurent_the_html_classes(); ?>>
 <head>
@@ -25,7 +28,7 @@
 <header class="top-navbar">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand logo" href="<?php esc_url( site_url() ); ?>">
 			<img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt="logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +36,11 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbars-rs-food">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+					<?php
+					foreach ( $item_menu as $key => $item ) {
+						?>
+						<li class="nav-item"><a class="nav-link" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+					<?php } ?>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
 						<div class="dropdown-menu" aria-labelledby="dropdown-a">
@@ -58,3 +63,9 @@
 	</nav>
 </header>
 <!-- End header -->
+<?php
+if ( is_home() ) {
+	echo '<pre>';
+	var_dump( 'abc' );
+}
+?>

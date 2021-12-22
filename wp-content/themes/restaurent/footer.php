@@ -1,3 +1,8 @@
+<?php
+wp_footer();
+$theme_url = get_template_directory_uri();
+?>
+<script src="<?php echo $theme_url; ?>/assets/js/common.js"></script>
 <!-- Start Footer -->
 <footer class="footer-area bg-f">
 		<div class="container">
