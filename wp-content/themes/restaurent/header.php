@@ -63,9 +63,3 @@ $item_menu = get_menus( 'main-menu' );
 	</nav>
 </header>
 <!-- End header -->
-<?php
-if ( is_home() ) {
-	echo '<pre>';
-	var_dump( 'abc' );
-}
-?>
